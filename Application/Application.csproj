@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Machines\" />
+    <Folder Include="DTOs\Materials\" />
+    <Folder Include="DTOs\Workers\" />
+    <Folder Include="Features\Machines\" />
+    <Folder Include="Features\Materials\" />
+    <Folder Include="Features\Workers\" />
+  </ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+		<PackageReference Include="MediatR" Version="12.4.1" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
